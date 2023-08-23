@@ -18,7 +18,7 @@ public class ItemLooter : InventoryAbstract
 		this.LoadRigidbody();
 	}
 
-	protected virtual void LoadInventory()
+	protected override void LoadInventory()
 	{
 		if (this.inventory != null) return;
 		this.inventory = transform.parent.GetComponent<Inventory>();

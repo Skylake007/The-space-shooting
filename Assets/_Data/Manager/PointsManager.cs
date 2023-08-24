@@ -5,10 +5,10 @@ using UnityEngine;
 public class PointsManager : BinBehaviour
 {
 	[SerializeField] protected List<PlayerShipCtrl> ships = new List<PlayerShipCtrl>();
-	[SerializeField] protected List<Transform> spawnPoints = new List<Transform>();
+	[SerializeField] protected List<ShipSpawnPos> spawnPoints = new List<ShipSpawnPos>();
 	[SerializeField] protected List<ShipStandPos> standPoints = new List<ShipStandPos>();
 
-	public List<Transform> SpawnPoints => spawnPoints;
+	public List<ShipSpawnPos> SpawnPoints => spawnPoints;
 	public List<ShipStandPos> StandPoints => standPoints;
 
 	protected override void LoadComponents()
@@ -24,7 +24,8 @@ public class PointsManager : BinBehaviour
 		Transform points = transform.Find("SpawnPoints");
 		foreach (Transform point in points)
 		{
-			this.spawnPoints.Add(point);
+			ShipSpawnPos shipSpawnPos = point.GetComponent<ShipSpawnPos>();
+			this.spawnPoints.Add(shipSpawnPos);
 		}
 		Debug.LogWarning(transform.name + ": LoadSpawnPoints", gameObject);
 	}

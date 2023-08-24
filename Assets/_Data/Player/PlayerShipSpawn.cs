@@ -53,7 +53,7 @@ public class PlayerShipSpawn : ShipManagerAbstract
 		shipCtrl.transform.position = point.position;
 		shipCtrl.gameObject.SetActive(true);
 
-		point = this.shipManagerCtrl.pointsManager.StandPoints[index];
+		point = this.shipManagerCtrl.pointsManager.StandPoints[index].transform;
 		shipMoveForward = shipCtrl.ObjMovement as ShipMoveFoward;
 		if (shipMoveForward != null) shipMoveForward.SetMoveTarget(point);
 	}

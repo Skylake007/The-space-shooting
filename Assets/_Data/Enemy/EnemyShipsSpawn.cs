@@ -30,7 +30,7 @@ public class EnemyShipsSpawn : ShipManagerAbstract
 		this.shipManagerCtrl.shipsManager.AddShip(shipCtrl);
 
 		shipObj.gameObject.SetActive(true);
-		point = this.shipManagerCtrl.pointsManager.StandPoints[0];
+		point = this.shipManagerCtrl.pointsManager.StandPoints[0].transform;
 		shipMoveForward = shipCtrl.ObjMovement as ShipMoveFoward;
 		if (shipMoveForward != null) shipMoveForward.SetMoveTarget(point);
 	}

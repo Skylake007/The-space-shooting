@@ -16,6 +16,11 @@ public class ShipStandPos : BinBehaviour
 		this.LoadLaneId();
 	}
 
+	protected virtual void FixedUpdate()
+	{
+		this.CheckObjectStatus();
+	}
+
 	protected virtual void LoadLaneId()
 	{
 		string name = transform.name;
@@ -32,5 +37,12 @@ public class ShipStandPos : BinBehaviour
 	public virtual bool IsOccupied()
 	{
 		return this.abilityObjectCtrl != null;
+	}
+
+	protected virtual void CheckObjectStatus()
+	{
+		if (this.abilityObjectCtrl == null) return;
+		if (this.abilityObjectCtrl.gameObject.activeSelf == true) return;
+		this.SetAbilityObjectCtrl(null);
 	}
 }

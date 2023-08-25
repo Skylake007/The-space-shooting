@@ -17422,7 +17422,8 @@ MonoBehaviour:
   shipManagerCtrl: {fileID: 531814326}
   timer: 0
   delay: 2
-  limit: 3
+  limit: 10
+  laneIndex: 0
 --- !u!1 &2044357266
 GameObject:
   m_ObjectHideFlags: 0

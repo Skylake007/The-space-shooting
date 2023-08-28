@@ -31,6 +31,10 @@ public class PlayerShipSpawn : ShipManagerAbstract
 		shipObj = PlayerShipsSpawner.Instance.Spawn(ShipCode.Tanker);
 		shipCtrl = shipObj.GetComponent<PlayerShipCtrl>();
 		this.shipManagerCtrl.shipsManager.AddShip(shipCtrl);
+
+		shipObj = PlayerShipsSpawner.Instance.Spawn(ShipCode.Tanker);
+		shipCtrl = shipObj.GetComponent<PlayerShipCtrl>();
+		this.shipManagerCtrl.shipsManager.AddShip(shipCtrl);
 	}
 	public virtual void SpawnShips()
 	{

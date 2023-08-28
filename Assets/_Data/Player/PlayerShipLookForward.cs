@@ -10,6 +10,6 @@ public class PlayerShipLookForward : ShipLookForward
 
 	protected override Transform GetParent()
 	{
-		return base.GetParent();
+		return PlayerShipsCtrl.Instance.transform;
 	}
 }

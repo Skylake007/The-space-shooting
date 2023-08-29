@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -52,12 +51,12 @@ public class CharAttributes : BinBehaviour
 
 	public virtual Attribute Get(AttributeType type)
 	{
-		return this.attributes.Find(attr => attr.GetType == type);
+		return this.attributes.Find(attr => attr.type == type);
 	}
 
 	public virtual bool Add(AttributeType type, int add)
 	{
-		int newCurrentPoint = this.currentPoint + add);
+		int newCurrentPoint = this.currentPoint + add;
 		if (newCurrentPoint > this.maxPoint) return false;
 
 		this.currentPoint = newCurrentPoint;

@@ -1521,7 +1521,7 @@ Transform:
   m_GameObject: {fileID: 141227941}
   m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 883044933}
@@ -1568,7 +1568,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9c7df7a295e42674eb093a49346a77db, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 31d8a46be10bcd3409183a6525fc1635, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13909,7 +13909,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cc2721dc8706a474b97273837abcf0b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 31d8a46be10bcd3409183a6525fc1635, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16881,7 +16881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shipManagerCtrl: {fileID: 531814326}
   timer: 0
-  delay: 2
+  delay: 0.1
   limit: 10
   laneIndex: 0
 --- !u!1 &2044357266

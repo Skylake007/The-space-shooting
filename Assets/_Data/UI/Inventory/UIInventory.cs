@@ -55,7 +55,7 @@ public class UIInventory : UIInventoryAbstract
 
 		this.ClearItem();
 
-		List<ItemInventory> items = PlayerCtrl.Instance.CurrentShip.Inventory.Items;
+		List<ItemInventory> items = PlayerShipsCtrl.Instance.Inventory.Items;
 		UIInvItemSpawner spawner = this.inventoryCtrl.UIInvItemSpawner;
 		foreach (ItemInventory item in items)
 		{

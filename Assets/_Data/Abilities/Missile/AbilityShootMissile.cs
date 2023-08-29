@@ -32,7 +32,7 @@ public class AbilityShootMissile : BaseAbility
 
 		newBullet.gameObject.SetActive(true);
 		BulletCtrl bulletCtrl = newBullet.GetComponent<BulletCtrl>();
-		bulletCtrl.SetShotter(PlayerCtrl.Instance.CurrentShip.transform);
+		//bulletCtrl.SetShotter(PlayerCtrl.Instance.CurrentShip.transform);
 		//bulletCtrl.GetComponentInChildren<ObjLookAtEnemy>().SetTarget(target);
 		bulletCtrl.GetComponentInChildren<ObjLookAtEnemy>();
 	}

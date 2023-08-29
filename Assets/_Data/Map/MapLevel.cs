@@ -9,9 +9,10 @@ public class MapLevel : LevelByDistance
 	protected virtual void MapSetTarget()
 	{
 		if (this.target != null) return;
-		if (PlayerCtrl.Instance.CurrentShip == null) return;
+		//if (PlayerCtrl.Instance.CurrentShip == null) return;
 
-		PlayerShipCtrl currentShip = PlayerCtrl.Instance.CurrentShip;
-		this.SetTarget(currentShip.transform);
+		//PlayerShipCtrl currentShip = PlayerCtrl.Instance.CurrentShip;
+		//this.SetTarget(currentShip.transform);
+		//TODO: find onother way for up the map
 	}
 }

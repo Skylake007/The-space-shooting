@@ -7,7 +7,7 @@ public class PressableAbility : Pressable
     [SerializeField] protected AbilityCode ability;
     public override void Pressed()
     {
-        Debug.Log("PressableAbility: " + ability.ToString());
-        PlayerCtrl.Instance.PlayerAbility.Active(ability);
+        //Debug.Log("PressableAbility: " + ability.ToString());
+        //PlayerCtrl.Instance.PlayerAbility.Active(ability);
     }
 }

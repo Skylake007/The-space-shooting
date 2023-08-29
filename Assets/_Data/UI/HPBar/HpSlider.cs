@@ -18,11 +18,11 @@ public class HpSlider : BaseSlider
 
 	protected virtual void HPShowing()
 	{
-		if (PlayerCtrl.Instance.CurrentShip == null) return;
+		//if (PlayerCtrl.Instance.CurrentShip == null) return;
 
-		int hpMax = PlayerCtrl.Instance.CurrentShip.DamageReceiver.HPMax;
-		int hp = PlayerCtrl.Instance.CurrentShip.DamageReceiver.HP;
-		float hpPercent = hp / maxHP;
-		this.slider.value = hpPercent;
+		//int hpMax = PlayerCtrl.Instance.CurrentShip.DamageReceiver.HPMax;
+		//int hp = PlayerCtrl.Instance.CurrentShip.DamageReceiver.HP;
+		//float hpPercent = hp / maxHP;
+		//this.slider.value = hpPercent;
 	}
 }

@@ -7,7 +7,8 @@ public class PlayerShipsCtrl : ShipManagerCtrl
     private static PlayerShipsCtrl instance;
     public static PlayerShipsCtrl Instance { get => instance; }
 
-    public Inventory inventory;
+    [SerializeField] protected Inventory inventory;
+    public Inventory Inventory => inventory;
 
 
     protected override void Awake()

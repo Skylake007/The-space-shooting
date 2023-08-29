@@ -25,7 +25,8 @@ public class ItemPickupable : ItemAbstract
 	public virtual void OnMouseDown()
 	{
 		Debug.Log(transform.parent.name);
-		PlayerCtrl.Instance.PlayerPickup.ItemPickup(this); 
+		//PlayerShipsCtrl.Instance.inventory.AddItem
+		////TODO: use new inventory
 	}
 
 	protected override void LoadComponents()

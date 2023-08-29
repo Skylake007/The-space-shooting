@@ -27,21 +27,21 @@ public class DespawnByDied : HidenObj
 
 	protected virtual void IsShipDead()
 	{
-		int hpMax = PlayerCtrl.Instance.CurrentShip.DamageReceiver.HPMax;
-		int hp = PlayerCtrl.Instance.CurrentShip.DamageReceiver.HP;
+		//int hpMax = PlayerCtrl.Instance.CurrentShip.DamageReceiver.HPMax;
+		//int hp = PlayerCtrl.Instance.CurrentShip.DamageReceiver.HP;
 
-		if (hp <= 0)
-		{
-			this.currentHP = hp;
-			Debug.LogWarning("SHIPHP=====================\n " + currentHP);
-			this.IsDead = true;
-			this.OnDeadFX();
-			UINotification.Instance.Open();
-		}
-		else {
-			this.IsDead = false;
-			PlayerCtrl.Instance.CurrentShip.gameObject.SetActive(true);
-		}
+		//if (hp <= 0)
+		//{
+		//	this.currentHP = hp;
+		//	Debug.LogWarning("SHIPHP=====================\n " + currentHP);
+		//	this.IsDead = true;
+		//	this.OnDeadFX();
+		//	UINotification.Instance.Open();
+		//}
+		//else {
+		//	this.IsDead = false;
+		//	PlayerCtrl.Instance.CurrentShip.gameObject.SetActive(true);
+		//}
 	}
 
 	protected virtual void OnDeadFX()

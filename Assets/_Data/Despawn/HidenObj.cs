@@ -22,7 +22,7 @@ public abstract class HidenObj : BinBehaviour
     public virtual void HideObject()
     {
         //this.transform.parent.gameObject.SetActive(false);
-        PlayerCtrl.Instance.CurrentShip.gameObject.SetActive(false);
+        //PlayerCtrl.Instance.CurrentShip.gameObject.SetActive(false);
     }
 
     public virtual void UnHidenObject()

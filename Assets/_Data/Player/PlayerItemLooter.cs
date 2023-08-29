@@ -7,7 +7,7 @@ public class PlayerItemLooter : ItemLooter
 	protected override void LoadInventory()
 	{
 		if(this.inventory != null) return;
-		this.inventory = GameObject.Find("PlayerShipsCtrl").GetComponent<PlayerShipsCtrl>().inventory;
+		this.inventory = GameObject.Find("PlayerShipsCtrl").GetComponent<PlayerShipsCtrl>().Inventory;
 		Debug.LogWarning(transform.name + ": LoadInventory", gameObject);
 	}
 }

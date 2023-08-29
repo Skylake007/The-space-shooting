@@ -9,8 +9,8 @@ public class BtnRestartGame : BaseButton
 		//Respawn here
 		Debug.LogWarning("ReSpawn Ship");
 		UINotification.Instance.Close();
-		PlayerCtrl.Instance.CurrentShip.gameObject.SetActive(true);
-		PlayerCtrl.Instance.CurrentShip.DamageReceiver.Reborn();
+		//PlayerCtrl.Instance.CurrentShip.gameObject.SetActive(true);
+		//PlayerCtrl.Instance.CurrentShip.DamageReceiver.Reborn();
 
 	}
 }

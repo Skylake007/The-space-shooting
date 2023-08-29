@@ -23,7 +23,6 @@ public class CharAttributes : BinBehaviour
 		this.Add(AttributeType.strength, 4);
 		this.Add(AttributeType.luck, 3);
 		this.Deduct(AttributeType.strength, 1);
-
 	}
 
 	protected override void LoadComponents()

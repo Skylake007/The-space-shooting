@@ -5,5 +5,6 @@ public enum AttributeType
 	constitution = 2,
 	dexterity = 3,
 	intelligence = 4,
+	wisdom = 5,
 	luck = 7,
 }

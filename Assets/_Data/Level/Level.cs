@@ -1,32 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Level : BinBehaviour
 {
-	[Header("Level")]
-	[SerializeField] protected int levelCurrent = 0;
-	[SerializeField] protected int levelMax = 99;
+    [Header("Level")]
+    [SerializeField] protected int levelCurrent = 0;
+    [SerializeField] protected int levelMax = 1000;
+    public int LevelCurrent => levelCurrent;
+    public int LevelMax => levelMax;
 
-	public int LevelCurrent => levelCurrent;
-	public int LevelMax => levelMax;
+    public virtual bool LevelUp()
+    {
+        int newLevel = this.levelCurrent + 1;
+        if (newLevel > this.levelMax) return false;
 
-	public virtual void LevelUp()
-	{
-		this.levelCurrent += 1;
-		this.LimitLevel();
-	}
+        this.levelCurrent += 1;
+        return true;
+    }
 
-	public virtual void LevelSet(int newLevel)
-	{
-		this.levelCurrent = newLevel;
-		this.LimitLevel();
-	}
+    public virtual bool SetLevel(int newLevel)
+    {
+        if (newLevel > this.levelMax) return false;
+        if (newLevel < 1) return false;
 
-	protected virtual void LimitLevel()
-	{
-		if (this.levelCurrent > this.levelMax) this.levelCurrent = this.levelMax;
-		if (this.LevelCurrent < 1) this.levelCurrent = 1;
-	}
-
+        this.levelCurrent = newLevel;
+        return true;
+    }
 }
